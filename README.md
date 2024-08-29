@@ -54,14 +54,19 @@ ER Diagram
 git clone https://github.com/KushShriv/Inventory-Management-System-Spring.git
 ```
 
-2. Build & Run Backend
+2. Create the Databases: Download mysql, run `mysql -u root -p` and open the `mysql terminal`, then run
+```
+source PathToRepo/createTables.sql
+```
+
+3. Build & Run Backend
 ``` 
 mvn clean install
 mvn clean compile
 mvn spring-boot:run
 ```
 
-3. Run Frontend
+4. Run Frontend
 Install streamlit in a virtual env and run this command:
 ```
 streamlit run frontend.py
